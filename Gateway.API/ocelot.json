@@ -25,6 +25,8 @@
       "UpstreamPathTemplate": "/gateway/customers",
       "UpstreamHttpMethod": [ "POST", "PUT", "GET" ]
     }
-  ]
-
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "https://localhost:5000"
+  }
 }

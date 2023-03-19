@@ -31,10 +31,12 @@ app.UseHttpsRedirection();
 
 app.UseAuthorization();
 
+// 3 register middleware
+app.UseOcelot().Wait();
+
 app.MapControllers();
 
-// 3 register middleware
-await app.UseOcelot();
+
 
 app.Run();
 
